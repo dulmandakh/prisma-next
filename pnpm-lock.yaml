@@ -79,6 +79,9 @@ importers:
       lint-staged:
         specifier: ^16.2.6
         version: 16.2.6
+      pkg-pr-new:
+        specifier: 0.0.71
+        version: 0.0.71
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -784,6 +787,9 @@ importers:
       '@prisma-next/utils':
         specifier: workspace:*
         version: link:../utils
+      '@standard-schema/spec':
+        specifier: ^1.1.0
+        version: 1.1.0
       arktype:
         specifier: 'catalog:'
         version: 2.1.29
@@ -974,9 +980,9 @@ importers:
       '@prisma-next/contract':
         specifier: workspace:*
         version: link:../../0-foundation/contract
-      '@prisma-next/contract-authoring':
+      '@prisma-next/framework-components':
         specifier: workspace:*
-        version: link:../contract
+        version: link:../../1-core/framework-components
       '@prisma-next/utils':
         specifier: workspace:*
         version: link:../../0-foundation/utils
@@ -2186,6 +2192,9 @@ importers:
       '@prisma-next/utils':
         specifier: workspace:*
         version: link:../../../1-framework/0-foundation/utils
+      '@standard-schema/spec':
+        specifier: ^1.1.0
+        version: 1.1.0
       arktype:
         specifier: 'catalog:'
         version: 2.1.29
@@ -2421,6 +2430,9 @@ importers:
       '@prisma-next/sql-runtime':
         specifier: workspace:*
         version: link:../../2-sql/5-runtime
+      '@standard-schema/spec':
+        specifier: ^1.1.0
+        version: 1.1.0
       arktype:
         specifier: ^2.1.29
         version: 2.1.29
@@ -2593,6 +2605,9 @@ importers:
       '@prisma-next/sql-schema-ir':
         specifier: workspace:*
         version: link:../../2-sql/1-core/schema-ir
+      '@standard-schema/spec':
+        specifier: ^1.1.0
+        version: 1.1.0
       arktype:
         specifier: ^2.0.0
         version: 2.1.29
@@ -3062,6 +3077,9 @@ importers:
       '@prisma-next/utils':
         specifier: workspace:*
         version: link:../../../1-framework/0-foundation/utils
+      '@standard-schema/spec':
+        specifier: ^1.1.0
+        version: 1.1.0
       arktype:
         specifier: ^2.0.0
         version: 2.1.29
@@ -7403,6 +7421,10 @@ packages:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
     engines: {node: '>=8'}
 
+  pkg-pr-new@0.0.71:
+    resolution: {integrity: sha512-Ln7I7NaOXN6CjBLVrNqsWOo6mIaNW4chH4eCR2t4tnQSmYtyQiWCqlMG6bL2JYCT1MOiKEiDObnnzePGh0TNFQ==}
+    hasBin: true
+
   pkg-types@2.3.0:
     resolution: {integrity: sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig==}
 
@@ -11459,6 +11481,8 @@ snapshots:
   pkg-dir@4.2.0:
     dependencies:
       find-up: 4.1.0
+
+  pkg-pr-new@0.0.71: {}
 
   pkg-types@2.3.0:
     dependencies:
